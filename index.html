@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GuessNumber</title>
+</head>
+<script src="jquery-1.12.3.js" type="text/javascript" charset="utf-8" ></script>
+<script src="js.js" type="text/javascript" charset="utf-8" ></script>
+<script type="text/javascript"
+src="http://127.0.0.1:35729/livereload.js"></script>
+<style>
+
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+
+	div{
+		overflow: hidden;
+		text-align: center;
+
+
+	}
+
+	#container{
+		height: 700px;
+		border: 1px solid green;
+	}
+
+
+
+
+	#history{
+		float: left;
+		width: 50%;
+		height: 500px;
+		background: purple;
+	}
+
+	#tips{
+		float: right;
+		height: 500px;
+		width: 50%;
+		background: orange;
+	}
+
+
+	#SetRange{
+		float: left;
+		height: 100px;
+		width: 50%;
+		background: blue;
+		
+	}
+
+	#guess{
+		float: right;
+		height: 100px;
+		width: 50%;
+		background: green;
+	}
+
+	input{
+		width: 100px;
+	}
+
+	#alert{
+		display: none;
+		background: gray;
+		height: 100px;
+		width: 50%;
+		position: relative;
+
+	}
+
+	#alert > button{
+		height: 20px;
+		width: 70px;
+		border: 1px solid black;
+		background: white;
+		
+	}
+
+	
+
+</style>
+<body>
+	<div id="container">
+
+
+		<div id="history">history</div>
+		<div id="tips">tips</div>
+
+
+
+		<div id="SetRange">请在下方输入您设定的取值范围:<br>
+			最小值：<input id="min" type="number" min="1" max="999" step="1"><br>
+			最大值：<input id="max" type="number" min="1" max="999" step="1"><br>
+			<button  style="width: 70px">提交</button>
+
+		</div>
+		<div id="guess"></div>
+		<div id="alert">
+			<p></p>
+			<div  style="width:70px;position: absolute;bottom: 10px;">
+			<button>我知道了</button>
+			</div>
+		</div>
+			
+		
+
+	</div>
+</body>
+</html>
